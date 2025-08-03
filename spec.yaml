@@ -1,0 +1,21 @@
+# 游戏技术规格
+name: du10-adventure
+
+platform: web-h5          # 目标平台 (h5 | miniapp | desktop)
+resolution: 1024x576      # 背景图分辨率
+
+scriptFormat: json        # 场景脚本格式 (json / ink / yarn)
+saveFormat: localStorage  # 存档保存方式
+
+engine:
+  framework: vue3
+  language: typescript
+  state: pinia
+
+image:
+  painter: leonardo       # 默认图像生成服务 (dalle | leonardo | sdxl)
+  char_style: japanese_light_novel
+
+audio:
+  bgm_format: mp3
+  sfx_format: wav
